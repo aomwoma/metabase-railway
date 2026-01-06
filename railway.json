@@ -3,19 +3,5 @@
   "build": {
     "builder": "DOCKERFILE",
     "dockerfilePath": "Dockerfile"
-  },
-  "deploy": {
-    "services": [
-      {
-        "name": "metabase",
-        "mounts": [
-          {
-            "type": "volume",
-            "target": "/metabase-data",
-            "name": "metabase-data"
-          }
-        ]
-      }
-    ]
   }
 }
